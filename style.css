@@ -4,8 +4,6 @@ body{
     animation: gradient-animation 18s ease infinite;
 }
 
-
-
   @keyframes gradient-animation {
     0% {
       background-position: 0% 50%;
@@ -66,10 +64,8 @@ ul{
 }
 ul>li>a{
   text-decoration: none;
-  color:black;
- 
+  color:black; 
 }
-
 
 #div1, #div2 {
 position:relative;
@@ -80,9 +76,7 @@ width:100%;
 }
 
 .container1{
-  display:grid;
-
- 
+  display:grid; 
 }
 
 .box1>.content>button{
