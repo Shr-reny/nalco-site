@@ -67,7 +67,7 @@ ul>li>a{
   color:black; 
 }
 
-#div1, #div2 {
+/*#div1, #div2 {
 position:relative;
 margin-top:30px ;
 background-color: aliceblue;
@@ -129,7 +129,7 @@ width:100%;
 
   .l1{
     float:left;
-  }
+  }*/
   
   .l2{
     float:left;
