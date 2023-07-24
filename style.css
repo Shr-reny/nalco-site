@@ -1,8 +1,9 @@
 body{
-    background: linear-gradient(300deg, #bfc3c4, #e5e57c, #d3a04e);
+    background: white;
     background-size: 180% 180%;
     animation: gradient-animation 18s ease infinite;
 }
+
 
   @keyframes gradient-animation {
     0% {
@@ -16,37 +17,113 @@ body{
     }
   }
 
-  .container{
-    display:grid;
-    height:100vh;
-    width:100%;
-    gap:70px;
-    grid-template-columns: 1fr 1fr;
+  .nav img {
+    margin-top: -5rem !important;
+    margin-bottom: -4rem !important;
   }
 
+  .search-container{
+    max-width: 800px;
+    margin: 30px auto;
+  }
+  
+  .search-container .searchInput{
+    background: #fff;
+    width: 100%;
+    border-radius: 1.625rem;
+    position: relative;
+    box-shadow: 0px 1px 5px 3px rgba(0,0,0,0.12);
+  }
+  
+  .searchInput input{
+    height: 50px;
+    width: 100%;
+    outline: none;
+    border: none;
+    border-radius: 1.625rem;
+    padding: 0 60px 0 20px;
+    font-size: 18px;
+    box-shadow: 0px 1px 5px rgba(0,0,0,0.1);
+  }
+  
+  .searchInput.active input{
+    border-radius: 5px 5px 0 0;
+  }
+  
+  .searchInput .resultBox{
+    padding: 0;
+    opacity: 0;
+    pointer-events: none;
+    max-height: 280px;
+    width: 800px;
+    overflow-y: auto;
+    position: fixed;
+    background: rgba(250, 248, 248, 0.99);
+  }
+  
+  .searchInput.active .resultBox{
+    padding: 10px 8px;
+    opacity: 1;
+    pointer-events: auto;
+  }
+  
+  .resultBox li{
+    list-style: none;
+    padding: 8px 12px;
+    display: none;
+    width: 100%;
+    cursor: default;
+    border-radius: 3px;
+  }
+  
+  .searchInput.active .resultBox li{
+    display: block;
+  }
+  .resultBox li:hover{
+    background: #efefef;
+  }
+
+  
+  .container{
+    display:flex;
+    height:65vh;
+    margin-top: 50px;
+    width:100%;
+    gap:30px;
+    /* grid-template-columns: 1fr 1fr; */
+  }
+
+  a.hover_link:hover  
+  { color: rgb(175, 43, 43) !important;  } 
+
   .box1{
-    grid-area:span 1;
-    background-color: #bfc3c4;
+    /* grid-area:span 1; */
+    background-color: #e8e9e9ef;
     border-radius: 10px;
     border:15px black;
-    margin-top: 30px;
     transition: background-color 0.3s ease;
+    height: 90%;
+    width: 100%;
+    margin-right: 200px;
   }
 
   .box1:hover {
-    background-color: #578882;
+    background-color: #d8dada;
   }
 
   .box2{
-    grid-area:span 1;
-    background-color: #bfc3c4;
+    /* grid-area:span 1; */
+    background-color: #e8e9e9ef;
     border-radius: 10px;
     border:15px black;
-    margin-top: 30px;
+    margin-top: 50px;
     transition: background-color 0.3s ease;
+    height: 90%;
+    width: 100%;
+    margin: auto;
   }
   .box2:hover {
-    background-color: #578882;
+    background-color: #d8dada;
   }
 
 .header{
@@ -55,7 +132,8 @@ body{
   font-weight:800;
   padding:10px;
   margin:0;
-  margin-top:5pt;
+  margin-top:5px;
+  margin-bottom: 5px;
   text-align: center;
 }
 
@@ -64,10 +142,66 @@ ul{
 }
 ul>li>a{
   text-decoration: none;
-  color:black; 
+  color:black;
+ 
 }
 
-#div1, #div2 {
+@media (max-width: 980px){
+  .container{
+    margin-top: 100px;
+    margin: auto;
+    height:65vh;
+    width: 100%;
+  }
+}
+
+.card{
+  background-color: black;
+  width: 40%;
+  height: 30vh;
+  margin: 50px 20px 30px 20px ;
+}
+.card-body li a{
+  text-decoration: none;
+  color: black;
+}
+
+.dropbtn {
+  color: black;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 8px 10px;
+  text-decoration: none;
+  display: block;
+  font-size: 14px;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  color:rgb(41, 40, 40);
+}
+
+
+
+/*#div1, #div2 {
 position:relative;
 margin-top:30px ;
 background-color: aliceblue;
@@ -76,7 +210,9 @@ width:100%;
 }
 
 .container1{
-  display:grid; 
+  display:grid;
+
+ 
 }
 
 .box1>.content>button{
@@ -129,9 +265,10 @@ width:100%;
 
   .l1{
     float:left;
-  }*/
+  }
   
   .l2{
     float:left;
   }
-}
+}*/
+
