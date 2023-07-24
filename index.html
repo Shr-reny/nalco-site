@@ -1,491 +1,492 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>NALCO WEB APPLICATION PAGE</title>
-     <link
-  rel="stylesheet" href="./style.css"/>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-</head>
-<body>
 
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">NALCO WEB APPLICATION MENU</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Other applications</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Recently viewed
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>  
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                  <!-- in href=" add links here" -->
-                </ul>
-              </li>
+<head>
+  <meta charset="UTF-8">
+  <title>NALCO WEB APPLICATION PAGE</title>
+  <link rel="stylesheet" href="./style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+</head>
+
+<bod>
+
+  <nav class="navbar bg-body-tertiary">
+    <div class="nav h-50 m-3">
+      <a class="navbar-brand" href="#">
+        <img src="https://i.ibb.co/GkpZtH9/download-removebg-preview-1.png" height="35px">
+      </a>
+    </div>
+  </nav>
+
+  <div class="search-container" id="searchbar">
+    <div class="searchInput">
+      <input type="text" onfocus="this.value=''" placeholder="search" id="search">
+      <div class="resultBox">
+        <!-- here list are inserted from javascript -->
+      </div>
+      <div class="icon"><i class="fas fa-search"></i></div>
+    </div>
+  </div>
+
+
+  <div class="container">
+
+    <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2 g-3">
+
+      <div class="col">
+        <div class="box1">
+          <div class="content">
+            <div class="header">DIGITAL EMPLOYEES / डिजिटल कर्मचारी</div>
+            <ul>
+              <li><a class="hover_link" href=#capex>CAPEX File Tracking System</a></li>
+              <li><a class="hover_link" href="http://10.60.235.33/CMS/">Content Management System</a></li>
+              <li><a class="hover_link" href=#hris>Human Resource Information System (MyData)</a></li>
+              <li><a class="hover_link" href=#cem>Capital Expenditure Monitoring</a></li>
+              <li><a class="hover_link" href="http://10.60.235.33/eGreetings/Default.aspx">eGreetings</a></li>
+              <li><a class="hover_link" href="http://10.60.235.33/Perquisites/">Pre requisites</a></li>
+              <li><a class="hover_link" href=#mis>MIS</a></li>
+              <li><a class="hover_link" href="http://10.60.235.33/HR/">HR</a></li>
+              <li><a class="hover_link" href="http://10.60.235.33/Admin/">Admin</a></li>
+              <li><a class="hover_link" href="#clms">Contract Labour Management System</a></li>
+              <li><a class="hover_link" href="http://10.60.235.33/#101">Post Retirement Medical</a></li>
+              <li><a class="hover_link" href="#loans">loans</a></li>
             </ul>
-            <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit" fdprocessedid="vsptwh">Search</button>
-            </form>
           </div>
         </div>
-    </nav>
+      </div>
 
-<div class="container" >
-  <div class="box1" onclick="toggleDropdown(this)" draggable="true">
-    <div class="content">
-      <div class="header">DIGITAL EMPLOYEES / डिजिटल कर्मचारी</div>
-       <ul>
-        <li><a href="http://10.60.235.33/NFTS/Default.aspx">CAPEX File Tracking System</a></li>
-        <li><a href="http://10.60.235.33/CMS/">Content Management System</a></li>
-        <li><a href="http://10.60.235.33/MyData/myinfo.aspx">Human Resource Information System (My Data)</a></li>
-        <li><a href="http://10.60.235.33/CBEM/">Capital Expenditure Monitoring</a></li>
-        <li><a href="http://10.60.235.33/eGreetings/Default.aspx">eGreetings</a></li>
-        <li><a href="http://10.60.235.33/Perquisites/">Perquisites</a></li>
-        <li><a href="http://10.60.235.33/Mis/">MIS</a></li>
-        <li><a href="http://10.60.235.33/HR/">HR⇨</a></li>
-        <li><a href="http://10.60.235.33/Admin/">Admin</a></li>
-        <li><a href="http://10.60.235.33/#29">Contract Labour Management System</a></li>
-        <li><a href="http://10.60.235.33/#101">Post Retirement Medical</a></li>
-        <li><a href="http://10.60.235.33/Loans/">loans</a></li>
-        <!-- Add links according to the requirements -->
-        
-      </ul>
-      <button onclick="scrollToDiv('div1')">View More</button>  
-   
-     </div>  
+
+      <div class="col">
+        <div class="box2">
+          <div class="content">
+            <div class="header">DIGITAL BUSINESS / डिजिटल व्यापार</div>
+            <ul>
+              <li><a class="hover_link" href="http://10.60.235.33/Admin/">Admin</a></li>
+              <li><a class="hover_link" href="http://10.60.235.33/Account/ChangePassword.aspx">Change Password</a></li>
+              <li><a class="hover_link" href="http://10.60.235.33/">Profile</a></li>
+              <li><a class="hover_link" href="http://10.60.235.33/eGreetings/Default.aspx">eGreetings</a></li>
+              <li><a class="hover_link" href="http://10.60.235.33/eGreetings/Default.aspx">eGreetings</a></li>
+              <li><a class="hover_link" href="http://10.60.235.33/Perquisites/">Pre requisites</a></li>
+              <li><a class="hover_link" href=#mis>MIS</a></li>
+              <li><a class="hover_link" href="http://10.60.235.33/HR/">HR</a></li>
+              <li><a class="hover_link" href="http://10.60.235.33/Admin/">Admin</a></li>
+              <li><a class="hover_link" href="#clms">Contract Labour Management System</a></li>
+              <li><a class="hover_link" href="http://10.60.235.33/#101">Post Retirement Medical</a></li>
+              <li><a class="hover_link" href="#loans">loans</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 
-  <div class="box2" onclick="toggleDropdown(this)" draggable="true">
-    <div class="content">
-      <div class="header"> DIGITAL BUSINESS / डिजिटल व्यापार</div>
-       <ul >
-    
-          <li><a href="http://10.60.235.33/Admin/">Admin</a></li>
-          <li><a href="http://10.60.235.33/Account/ChangePassword.aspx">Change Password</a></li>
-          <li><a href="http://10.60.235.33/">Profile</a></li>
-          <li><a href="http://10.60.235.33/eGreetings/Default.aspx">eGreetings</a></li>
-          <!-- Add links according to the requirements -->
-      
-       
-      </ul>
-      <button onclick="scrollToDiv('div2')">View More</button>
-     </div> 
+
+
+  <!-- <div class="cards">
+    <div class="card vw-100 shadow-lg p-3 mb-5 bg-body-tertiary rounded" id="capex">
+      <div class="card-header text-danger">
+        CAPEX File Tracking System
+      </div>
+      <div class="card-body">
+        <li><a class="hover_link" href="http://10.60.235.33/Admin/">Admin</a></li>
+        <li><a class="hover_link" href="http://10.60.235.33/Account/ChangePassword.aspx">Change Password</a></li>
+        <li><a class="hover_link" href="http://10.60.235.33/">Profile</a></li>
+        <div class="dropdown">
+          <li class="dropbtn">CLMS</li>
+          <div class="dropdown-content">
+            <a href="http://10.60.235.33/HR/">Profile</a>
+            <a href="http://10.60.235.33/HR/">Logs</a>
+            <a href="http://10.60.235.33/HR/">NPS</a>
+          </div>
+        </div>
+        <li><a class="hover_link" href="http://10.60.235.33/eGreetings/Default.aspx">eGreetings</a></li>
+        <li><a class="hover_link" href="http://10.60.235.33/">Profile</a></li>
+      </div>
+    </div>
+
+
+
+    <div class="card vw-100 shadow-lg p-3 mb-5 bg-body-tertiary rounded" id="hris">
+      <div class="card-header text-danger">
+        Human Resource Information System (MyData)
+      </div>
+      <div class="card-body">
+        <li><a class="hover_link" href="http://10.60.235.33/Admin/">Admin</a></li>
+        <li><a class="hover_link" href="http://10.60.235.33/Account/ChangePassword.aspx">Change Password</a></li>
+        <div class="dropdown">
+          <li class="dropbtn">Hrms</li>
+          <div class="dropdown-content">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+          </div>
+        </div>
+        <li><a class="hover_link" href="http://10.60.235.33/eGreetings/Default.aspx">eGreetings</a></li>
+
+      </div>
+    </div>
+
+
+    <div class="card vw-100 shadow-lg p-3 mb-5 bg-body-tertiary rounded" id="cem">
+      <div class="card-header text-danger">
+        Capital Expenditure Monitoring
+      </div>
+      <div class="card-body">
+        <li><a class="hover_link" href="http://10.60.235.33/Account/ChangePassword.aspx">Change Password</a></li>
+        <li><a class="hover_link" href="http://10.60.235.33/">Profile</a></li>
+        <li><a class="hover_link" href="http://10.60.235.33/eGreetings/Default.aspx">eGreetings</a></li>
+        <div class="dropdown">
+          <li class="dropbtn">Capex</li>
+          <div class="dropdown-content">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+          </div>
+        </div>
+        <li><a class="hover_link" href="http://10.60.235.33/">Profile</a></li>
+      </div>
+    </div>
+
+    <div class="card vw-100 shadow-lg p-3 mb-5 bg-body-tertiary rounded" id="mis">
+      <div class="card-header text-danger">
+        MIS
+      </div>
+      <div class="card-body">
+        <li><a class="hover_link" href="http://10.60.235.33/Admin/">Admin</a></li>
+        <div class="dropdown">
+          <li class="dropbtn">CLMS</li>
+          <div class="dropdown-content">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+          </div>
+        </div>
+        <li><a class="hover_link" href="http://10.60.235.33/Account/ChangePassword.aspx">Change Password</a></li>
+        <li><a class="hover_link" href="http://10.60.235.33/">Profile</a></li>
+        <li><a class="hover_link" href="http://10.60.235.33/eGreetings/Default.aspx">eGreetings</a></li>
+        <li><a class="hover_link" href="http://10.60.235.33/">Admin</a></li>
+      </div>
+    </div>
   </div>
-</div>
+  </div>
 
-<div class="container1">
 
-  <div id="div1">
-    <div class="index">
-      <h1>DIGITAL EMPLOYEES / डिजिटल कर्मचारी</h1>
-      <div class="box-content">
-              <div class="l1">
-                <ul>
-                                     
-                  <li><div class="btn-group dropend">
-                    <button type="button" class="btn btn-dark">
-                      <li><a href="http://10.60.235.33/NFTS/Default.aspx">CAPEX File Tracking System</a></li>
-                    </button>
-                    <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
-                      <span class="visually-hidden">Toggle Dropend</span>
-                    </button>
-                    <ul class="dropdown-menu">
-                    
-                    </ul>
-                  </div></li>
+  <div class="cards2">
 
-                  
-                  <li><div class="btn-group dropend">
-                    <button type="button" class="btn btn-dark">
-                      <li><a href="http://10.60.235.33/CMS/">Content Management System</a></li>
-                    </button>
-                    <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
-                      <span class="visually-hidden">Toggle Dropend</span>
-                    </button>
-                    <ul class="dropdown-menu">
-                      
-                    </ul>
-                  </div></li>
 
-                          
-                <li><div class="btn-group dropend">
-                  <button type="button" class="btn btn-dark">
-                    <li><a href="http://10.60.235.33/MyData/myinfo.aspx">Human Resource Information System (My Data)</a></li>
-                  </button>
-                  <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
-                    <span class="visually-hidden">Toggle Dropend</span>
-                  </button>
-                  <ul class="dropdown-menu">
-                   
-                  </ul>
-
-               
-
-                    
-                <li><div class="btn-group dropend">
-                  <button type="button" class="btn btn-dark">
-                    <li><a href="http://10.60.235.33/CBEM/">Capital Expenditure Monitoring</a></li>
-                  </button>
-                  <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
-                    <span class="visually-hidden">Toggle Dropend</span>
-                  </button>
-                  <ul class="dropdown-menu">
-                   
-                  </ul>
-                </div></li>
+    <div class="card vw-100 shadow-lg p-3 mb-5 bg-body-tertiary rounded" id="mis">
+      <div class="card-header text-danger">
+        MIS
+      </div>
+      <div class="card-body">
+        <li><a class="hover_link" href="http://10.60.235.33/Admin/">Admin</a></li>
+        <div class="dropdown">
+          <li class="dropbtn">CLMS</li>
+          <div class="dropdown-content">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+          </div>
+        </div>
+        <li><a class="hover_link" href="http://10.60.235.33/Account/ChangePassword.aspx">Change Password</a></li>
+        <li><a class="hover_link" href="http://10.60.235.33/">Profile</a></li>
+        <li><a class="hover_link" href="http://10.60.235.33/eGreetings/Default.aspx">eGreetings</a></li>
+        <li><a class="hover_link" href="http://10.60.235.33/">Profile</a></li>
+      </div>
+    </div>
 
 
 
 
-
-                  
-                <li><div class="btn-group dropend">
-                  <button type="button" class="btn btn-dark">
-                    <li><a href="http://10.60.235.33/eGreetings/Default.aspx">eGreetings</a></li>
-                  </button>
-                  <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
-                    <span class="visually-hidden">Toggle Dropend</span>
-                  </button>
-                  <ul class="dropdown-menu">
-                    
-                  </ul>
-                </div></li>
-                  
-
-
-                  
-                <li><div class="btn-group dropend">
-                  <button type="button" class="btn btn-dark">
-                    <li><a href="http://10.60.235.33/Perquisites/">Perquisites</a></li>
-                  </button>
-                  <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
-                    <span class="visually-hidden">Toggle Dropend</span>
-                  </button>
-                  <ul class="dropdown-menu">
-                  
-                  </ul>
-                </div></li>
+    <div class="card vw-100 shadow-lg p-3 mb-5 bg-body-tertiary rounded" id="clms">
+      <div class="card-header text-danger">
+        Contract Labour Management System
+      </div>
+      <div class="card-body">
+        <li><a class="hover_link" href="http://10.60.235.33/Admin/">Admin</a></li>
+        <li><a class="hover_link" href="http://10.60.235.33/Account/ChangePassword.aspx">Change Password</a></li>
+        <li><a class="hover_link" href="http://10.60.235.33/">Profile</a></li>
+        <div class="dropdown">
+          <li class="dropbtn">CLMS</li>
+          <div class="dropdown-content">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+          </div>
+        </div>
+        <li><a class="hover_link" href="http://10.60.235.33/eGreetings/Default.aspx">eGreetings</a></li>
+        <li><a class="hover_link" href="http://10.60.235.33/">Profile</a></li>
+      </div>
+    </div>
 
 
-                </ul>
+
+    <div class="card vw-100 shadow-lg p-3 mb-5 bg-body-tertiary rounded " id="mis">
+      <div class="card-header text-danger">
+        MIS
+      </div>
+      <div class="card-body">
+        <li><a class="hover_link" href="http://10.60.235.33/Admin/">Admin</a></li>
+        <div class="dropdown">
+          <li class="dropbtn">CLMS</li>
+          <div class="dropdown-content">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+          </div>
+        </div>
+        <li><a class="hover_link" href="http://10.60.235.33/Account/ChangePassword.aspx">Change Password</a></li>
+        <li><a class="hover_link" href="http://10.60.235.33/">Profile</a></li>
+        <li><a class="hover_link" href="http://10.60.235.33/eGreetings/Default.aspx">eGreetings</a></li>
+        <li><a class="hover_link" href="http://10.60.235.33/">Profile</a></li>
+      </div>
+    </div>
+
+
+
+    <div class="card vw-100 shadow-lg p-3 mb-5 bg-body-tertiary rounded" id="loans">
+      <div class="card-header text-danger">
+        Loans
+      </div>
+      <div class="card-body">
+        <li><a class="hover_link" href="http://10.60.235.33/Admin/">Admin</a></li>
+        <li><a class="hover_link" href="http://10.60.235.33/Account/ChangePassword.aspx">Change Password</a></li>
+        <li><a class="hover_link" href="http://10.60.235.33/">Profile</a></li>
+        <li><a class="hover_link" href="http://10.60.235.33/eGreetings/Default.aspx">eGreetings</a></li>
+        <li><a class="hover_link" href="http://10.60.235.33/">Profile</a></li>
+        <div class="dropdown">
+          <li class="dropbtn">CLMS</li>
+          <div class="dropdown-content">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div> -->
+
+  <!---->
+
+  <div class="container">
+    <div class="row row-cols-sm-1 row-cols-md-2 row-cols-lg-4 g-3">
+
+
+
+      <div class="col">
+        <div class="card w-100 shadow-lg p-3 mb-5 bg-body-tertiary rounded" id="capex" style="height: 18rem;">
+          <div class="card-header text-danger">
+            CAPEX File Tracking System
+          </div>
+          <div class="card-body">
+            <li><a class="hover_link" href="http://10.60.235.33/Admin/">Admin</a></li>
+            <li><a class="hover_link" href="http://10.60.235.33/Account/ChangePassword.aspx">Change Password</a></li>
+            <li><a class="hover_link" href="http://10.60.235.33/">Profile</a></li>
+            <div class="dropdown">
+              <li class="dropbtn">CLMS</li>
+              <div class="dropdown-content">
+                <a href="http://10.60.235.33/HR/">Profile</a>
+                <a href="http://10.60.235.33/HR/">Logs</a>
+                <a href="http://10.60.235.33/HR/">NPS</a>
               </div>
-
-
-
-
-              <div class="l2">
-                <ul>
-                
-              
-
-                <li><div class="btn-group dropend">
-                  <button type="button" class="btn btn-dark">
-                    <li><a href="http://10.60.235.33/HR/">HR⇨</a></li>
-                  </button>
-                  <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
-                    <span class="visually-hidden">Toggle Dropend</span>
-                  </button>
-                  <ul class="dropdown-menu">
-                    
-                  </ul>
-                </div></li>
-
-                
-              
-
-                
-                <li><div class="btn-group dropend">
-                  <button type="button" class="btn btn-dark">
-                    <li><a href="http://10.60.235.33/Admin/">Admin</a></li>
-                  </button>
-                  <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
-                    <span class="visually-hidden">Toggle Dropend</span>
-                  </button>
-                  <ul class="dropdown-menu">
-                   
-                  </ul>
-                </div></li>
-
-
-               
-                <li><div class="btn-group dropend">
-                  <button type="button" class="btn btn-dark">
-                    <li><a href="http://10.60.235.33/#29">Contract Labour Management System</a></li>
-                  </button>
-                  <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
-                    <span class="visually-hidden">Toggle Dropend</span>
-                  </button>
-                  <ul class="dropdown-menu">
-                   
-                  </ul>
-                </div></li>
-              
-
-              
-                <li><div class="btn-group dropend">
-                  <button type="button" class="btn btn-dark">
-                    <li><a href="http://10.60.235.33/#101">Post Retirement Medical</a></li>
-                  </button>
-                  <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
-                    <span class="visually-hidden">Toggle Dropend</span>
-                  </button>
-                  <ul class="dropdown-menu">
-                    
-                  </ul>
-                </div></li>
-              
-
-
-                  <li><div class="btn-group dropend">
-                    <button type="button" class="btn btn-dark">
-                      <li><a href="http://10.60.235.33/Mis/">MIS</a></li>
-                    </button>
-                    <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
-                      <span class="visually-hidden">Toggle Dropend</span>
-                    </button>
-                    <ul class="dropdown-menu">
-                   
-                    </ul>
-                  </div></li>
-                
-              </ul>
-              </div>  
-                 
-              
             </div>
-
-    </div> 
-  </div>
-  
-  <div id="div2">
-    <div class="index">
-      <h1>DIGITAL BUSSINESS / डिजिटल व्यापार</h1>
-    
-    <div class="box-content">
-      <div class="l1">
-        <ul>
-         
-            
-          <li><div class="btn-group dropend">
-            <button type="button" class="btn btn-dark">
-              <li><a href="http://10.60.235.33/Admin/">Admin</a></li>
-            </button>
-            <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
-              <span class="visually-hidden">Toggle Dropend</span>
-            </button>
-            <ul class="dropdown-menu">
-           
-            </ul>
-          </div></li>
-
-
-
-
-          
-          <li><div class="btn-group dropend">
-            <button type="button" class="btn btn-dark">
-              <li><a href="http://10.60.235.33/Loans/">loans</a></li>
-            </button>
-            <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
-              <span class="visually-hidden">Toggle Dropend</span>
-            </button>
-            <ul class="dropdown-menu">
-             
-            </ul>
-          </div></li>
-
-
-                  
-        <li><div class="btn-group dropend">
-          <button type="button" class="btn btn-dark">
-            <li><a href="http://10.60.235.33/Account/ChangePassword.aspx">Change Password</a></li>
-          </button>
-          <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
-            <span class="visually-hidden">Toggle Dropend</span>
-          </button>
-          <ul class="dropdown-menu">
-            
-          </ul>
-        </div></li>
-
-
-                
-        <li><div class="btn-group dropend">
-          <button type="button" class="btn btn-dark">
-            <li><a href="http://10.60.235.33/">Profile</a></li>
-          </button>
-          <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
-            <span class="visually-hidden">Toggle Dropend</span>
-          </button>
-          <ul class="dropdown-menu">
-            
-          </ul>
-        </div></li>
-       
-
-            
-        <li><div class="btn-group dropend">
-          <button type="button" class="btn btn-dark">
-            <li><a href="http://127.0.0.1:3000/frequentlyused.html">Others⇨</a></li>
-          </button>
-          <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
-            <span class="visually-hidden">Toggle Dropend</span>
-          </button>
-          <ul class="dropdown-menu">
-           
-          </ul>
-        </div></li>
-
-
-
-
-
-          
-        <li><div class="btn-group dropend">
-          <button type="button" class="btn btn-dark">
-          
-          </button>
-          <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
-            <span class="visually-hidden">Toggle Dropend</span>
-          </button>
-          <ul class="dropdown-menu">
-           
-          </ul>
-        </div></li>
-          
-
-
-          
-        <li><div class="btn-group dropend">
-          <button type="button" class="btn btn-dark">
-        
-          </button>
-          <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
-            <span class="visually-hidden">Toggle Dropend</span>
-          </button>
-          <ul class="dropdown-menu">
-           
-          </ul>
-        </div></li>
-
-
-        </ul>
+            <li><a class="hover_link" href="http://10.60.235.33/eGreetings/Default.aspx">eGreetings</a></li>
+            <li><a class="hover_link" href="http://10.60.235.33/">Profile</a></li>
+          </div>
+        </div>
       </div>
 
 
 
 
-      <div class="l2">
-        <ul>
-        
-      
+      <div class="col">
 
-        <li><div class="btn-group dropend">
-          <button type="button" class="btn btn-dark">
-         
-          </button>
-          <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
-            <span class="visually-hidden">Toggle Dropend</span>
-          </button>
-          <ul class="dropdown-menu">
-           
-          </ul>
-        </div></li>
+        <div class="card  w-100 shadow-lg p-3 mb-5 bg-body-tertiary rounded" id="hris" style="height: 18rem;">
+          <div class="card-header text-danger">
+            Human Resource Information System (MyData)
+          </div>
+          <div class="card-body">
+            <li><a class="hover_link" href="http://10.60.235.33/Admin/">Admin</a></li>
+            <li><a class="hover_link" href="http://10.60.235.33/Account/ChangePassword.aspx">Change Password</a></li>
+            <div class="dropdown">
+              <li class="dropbtn">Hrms</li>
+              <div class="dropdown-content">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+              </div>
+            </div>
+            <li><a class="hover_link" href="http://10.60.235.33/eGreetings/Default.aspx">eGreetings</a></li>
 
-        
-      
-
-        
-        <li><div class="btn-group dropend">
-          <button type="button" class="btn btn-dark">
-          
-          </button>
-          <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
-            <span class="visually-hidden">Toggle Dropend</span>
-          </button>
-          <ul class="dropdown-menu">
-            
-          </ul>
-        </div></li>
+          </div>
+        </div>
+      </div>
 
 
 
-        
-        <li><div class="btn-group dropend">
-          <button type="button" class="btn btn-dark">
-            
-          </button>
-          <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
-            <span class="visually-hidden">Toggle Dropend</span>
-          </button>
-          <ul class="dropdown-menu">
-         
-          </ul>
-        </div></li>
-      
-
-      
-        <li><div class="btn-group dropend">
-          <button type="button" class="btn btn-dark">
-         
-          </button>
-          <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
-            <span class="visually-hidden">Toggle Dropend</span>
-          </button>
-          <ul class="dropdown-menu">
-            
-          </ul>
-        </div></li>
-      
 
 
-          <li><div class="btn-group dropend">
-            <button type="button" class="btn btn-dark">
-            
-            </button>
-            <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
-              <span class="visually-hidden">Toggle Dropend</span>
-            </button>
-            <ul class="dropdown-menu">
-             
-            </ul>
-          </div></li>
-        
-      </ul>
-      </div>  
-         
+      <div class="col">
 
-    </div>   
+        <div class="card w-100 shadow-lg p-3 mb-5 bg-body-tertiary rounded" id="mis" style="height: 18rem;">
+          <div class="card-header text-danger">
+            MIS
+          </div>
+          <div class="card-body">
+            <li><a class="hover_link" href="http://10.60.235.33/Admin/">Admin</a></li>
+            <div class="dropdown">
+              <li class="dropbtn">CLMS</li>
+              <div class="dropdown-content">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+              </div>
+            </div>
+            <li><a class="hover_link" href="http://10.60.235.33/Account/ChangePassword.aspx">Change Password</a></li>
+            <li><a class="hover_link" href="http://10.60.235.33/">Profile</a></li>
+            <li><a class="hover_link" href="http://10.60.235.33/eGreetings/Default.aspx">eGreetings</a></li>
+            <li><a class="hover_link" href="http://10.60.235.33/">Admin</a></li>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card w-100 shadow-lg p-3 mb-5 bg-body-tertiary rounded" id="clms" style="height: 18rem;">
+          <div class="card-header text-danger">
+            Contract Labour Management System
+          </div>
+          <div class="card-body">
+            <li><a class="hover_link" href="http://10.60.235.33/Admin/">Admin</a></li>
+            <li><a class="hover_link" href="http://10.60.235.33/Account/ChangePassword.aspx">Change Password</a></li>
+            <li><a class="hover_link" href="http://10.60.235.33/">Profile</a></li>
+            <div class="dropdown">
+              <li class="dropbtn">CLMS</li>
+              <div class="dropdown-content">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+              </div>
+            </div>
+            <li><a class="hover_link" href="http://10.60.235.33/eGreetings/Default.aspx">eGreetings</a></li>
+            <li><a class="hover_link" href="http://10.60.235.33/">Profile</a></li>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col">
+
+        <div class="card w-100 shadow-lg p-3 mb-5 bg-body-tertiary rounded" id="cem" style="height: 18rem;">
+          <div class="card-header text-danger">
+            Capital Expenditure Monitoring
+          </div>
+          <div class="card-body">
+            <li><a class="hover_link" href="http://10.60.235.33/Account/ChangePassword.aspx">Change Password</a></li>
+            <li><a class="hover_link" href="http://10.60.235.33/">Profile</a></li>
+            <li><a class="hover_link" href="http://10.60.235.33/eGreetings/Default.aspx">eGreetings</a></li>
+            <div class="dropdown">
+              <li class="dropbtn">Capex</li>
+              <div class="dropdown-content">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+              </div>
+            </div>
+            <li><a class="hover_link" href="http://10.60.235.33/">Profile</a></li>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col">
+
+        <div class="card w-100 shadow-lg p-3 mb-5 bg-body-tertiary rounded" id="hris" style="height: 18rem;">
+          <div class="card-header text-danger">
+            Human Resource Information System (MyData)
+          </div>
+          <div class="card-body">
+            <li><a class="hover_link" href="http://10.60.235.33/Admin/">Admin</a></li>
+            <li><a class="hover_link" href="http://10.60.235.33/Account/ChangePassword.aspx">Change Password</a></li>
+            <div class="dropdown">
+              <li class="dropbtn">Hrms</li>
+              <div class="dropdown-content">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+              </div>
+            </div>
+            <li><a class="hover_link" href="http://10.60.235.33/eGreetings/Default.aspx">eGreetings</a></li>
+
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col">
+        <div class="card w-100 shadow-lg p-3 mb-5 bg-body-tertiary rounded" id="loans" style="height: 18rem;">
+          <div class="card-header text-danger">
+            Loans
+          </div>
+          <div class="card-body">
+            <li><a class="hover_link" href="http://10.60.235.33/Admin/">Admin</a></li>
+            <li><a class="hover_link" href="http://10.60.235.33/Account/ChangePassword.aspx">Change Password</a></li>
+            <li><a class="hover_link" href="http://10.60.235.33/">Profile</a></li>
+            <li><a class="hover_link" href="http://10.60.235.33/eGreetings/Default.aspx">eGreetings</a></li>
+            <li><a class="hover_link" href="http://10.60.235.33/">Profile</a></li>
+            <div class="dropdown">
+              <li class="dropbtn">CLMS</li>
+              <div class="dropdown-content">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+      <div class="col">
+        <div class="card w-100 shadow-lg p-3 mb-5 bg-body-tertiary rounded" id="capex" style="height: 18rem;">
+          <div class="card-header text-danger">
+            CAPEX File Tracking System
+          </div>
+          <div class="card-body">
+            <li><a class="hover_link" href="http://10.60.235.33/Admin/">Admin</a></li>
+            <li><a class="hover_link" href="http://10.60.235.33/Account/ChangePassword.aspx">Change Password</a></li>
+            <li><a class="hover_link" href="http://10.60.235.33/">Profile</a></li>
+            <div class="dropdown">
+              <li class="dropbtn">CLMS</li>
+              <div class="dropdown-content">
+                <a href="http://10.60.235.33/HR/">Profile</a>
+                <a href="http://10.60.235.33/HR/">Logs</a>
+                <a href="http://10.60.235.33/HR/">NPS</a>
+              </div>
+            </div>
+            <li><a class="hover_link" href="http://10.60.235.33/eGreetings/Default.aspx">eGreetings</a></li>
+            <li><a class="hover_link" href="http://10.60.235.33/">Profile</a></li>
+          </div>
+        </div>
+      </div>
+
+    </div>
   </div>
-</div>
 
 
+  <script src="script.js"></script>
 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
 
+  </body>
 
-
-<script>
-  function scrollToDiv(divId) {
-    const div = document.getElementById(divId);
-    div.scrollIntoView({ behavior: 'smooth' });
-  }
-</script>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
-    
-</body>
 </html>
