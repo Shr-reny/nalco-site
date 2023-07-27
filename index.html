@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>NALCO WEB APPLICATION PAGE</title>
+  <link rel="stylesheet" href="./style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+</head>
+
+<body>
+
+  <nav class="navbar bg-body-tertiary">
+    <div class="nav h-50 m-3">
+      <a class="navbar-brand" href="#">
+      <img src="https://i.ibb.co/GkpZtH9/download-removebg-preview-1.png" height="35px">
+      </a>
+    </div>
+  </nav>
+
+  <!--<div class="wrapper">
+    <div class="searchBar">
+      <input id="searchQueryInput" type="text" name="searchQueryInput" placeholder="Search" value="" />
+      <div class="links-container">
+      <button id="searchQuerySubmit" type="submit" name="searchQuerySubmit">
+        <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+        </svg>
+      </button>     
+        <a href="http://10.60.235.33/NFTS/Default.aspx">CAPEX</a>
+        <a href="http://10.60.235.33/CMS/">Content Management System</a>
+        <a href="http://10.60.235.33/Mis/">MIS</a>
+      </div>
+    </div>
+  </div>-->
+
+  <div class="search-container">
+    <input type="text" id="search-input" placeholder="Search...">
+    <div class="search-results" id="search-results">
+      <a href="http://10.60.235.33/NFTS/Default.aspx">CAPEX</a>
+      <a href="http://10.60.235.33/CMS/">Content Management System</a>
+      <a href="http://10.60.235.33/Mis/">MIS</a>
+    </div>
+</div>
+
+  <div class="container">
+
+    <div class="box1" onclick="toggleDropdown(this)" draggable="true">
+      <div class="content">
+        <div class="header">DIGITAL EMPLOYEES / डिजिटल कर्मचारी</div>
+        <ul>
+          <li><a class="hover_link" href="http://10.60.235.33/NFTS/Default.aspx">CAPEX File Tracking System</a></li>
+          <li><a class="hover_link" href="http://10.60.235.33/CMS/">Content Management System</a></li>
+          <li><a class="hover_link" href="http://10.60.235.33/MyData/myinfo.aspx">Human Resource Information System (My Data)</a></li>
+          <li><a class="hover_link" href="http://10.60.235.33/CBEM/">Capital Expenditure Monitoring</a></li>
+          <li><a class="hover_link" href="http://10.60.235.33/eGreetings/Default.aspx">eGreetings</a></li>
+          <li><a class="hover_link" href="http://10.60.235.33/Perquisites/">Perquisites</a></li>
+          <li><a class="hover_link" href="http://10.60.235.33/Mis/">MIS</a></li>
+          <li><a class="hover_link" href="http://10.60.235.33/HR/">HR</a></li>
+          <li><a class="hover_link" href="http://10.60.235.33/Admin/">Admin</a></li>
+          <li><a class="hover_link" href="http://10.60.235.33/#29">Contract Labour Management System</a></li>
+          <li><a class="hover_link" href="http://10.60.235.33/#101">Post Retirement Medical</a></li>
+          <li><a class="hover_link" href="http://10.60.235.33/Loans/">loans</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="box2" onclick="toggleDropdown(this)" draggable="true">
+      <div class="content">
+        <div class="header"> DIGITAL BUSSINESS / डिजिटल व्यापार</div>
+        <ul>
+
+          <li><a class="hover_link" href="http://10.60.235.33/Admin/">Admin</a></li>
+          <li><a class="hover_link" href="http://10.60.235.33/Account/ChangePassword.aspx">Change Password</a></li>
+          <li><a class="hover_link" href="http://10.60.235.33/">Profile</a></li>
+          <li><a class="hover_link" href="http://10.60.235.33/eGreetings/Default.aspx">eGreetings</a></li>
+        </ul>
+      </div>
+    </div>
+
+  <script>
+    function scrollToDiv(divId) {
+      const div = document.getElementById(divId);
+      div.scrollIntoView({ behavior: 'smooth' });
+    }
+  </script>
+
+  <script src="script.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>
