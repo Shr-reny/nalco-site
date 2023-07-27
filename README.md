@@ -1,4 +1,4 @@
-# nalco-site
+# NALCO INTRANET WEBSITE
 
 The frontend part of this intranet website is built entirely using HTML, CSS and JavaScript. Bootstrap, a CSS framework and jQuery, 
 a Js library is used for better functionality.
