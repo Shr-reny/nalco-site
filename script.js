@@ -1,34 +1,26 @@
-const searchInput = document.getElementById('search-input');
-const searchResults = document.getElementById('search-results');
-
-searchInput.addEventListener('input', () => {
-    const searchTerm = searchInput.value.toLowerCase();
-
-    // Replace the following example with your actual search logic or API call
-    const fakeSearchResults = ['MIS', 'CAPEX', 'Link 3', 'Link 4', 'Link 5'];
-
-    // Clear existing results
-    searchResults.innerHTML = '';
-
-    // Show results if search input is not empty
-    if (searchTerm) {
-        const filteredResults = fakeSearchResults.filter(result =>
-            result.toLowerCase().includes(searchTerm)
-        );
-
-        // Populate the search results container with links
-        filteredResults.forEach(result => {
-            const link = document.createElement('MIS');
-            link.textContent = result;
-            link.href = 'http://10.60.235.33/NFTS/Default.aspx' // Replace with the actual link you want to redirect to
-            searchResults.appendChild(link);
-        });
-
-        searchResults.style.display = 'block';
-    } else {
-        searchResults.style.display = 'none';
-    }
-});
-
+var $ = jQuery;
+$( function() {
+    var availableTags = [
+      {value:"Capex file tracking system", link:'#capex'},
+      {value:"Content Management System",link:'http://10.60.235.33/CMS/'},
+      {value:"Human Resource Information System (MyData)",link:'#hris'},
+      {value:"Loans",link:'#loans'},
+      {value:"ADMIN",link:'#admin'},
+      {value:"HR",link:'http://10.60.235.33/HR/'},
+      {value:"MIS",link:'#mis'},
+      {value:"egreetings",link:'http://10.60.235.33/HR/'},
+      {value:"Pre-requisites",link:'http://10.60.235.33/HR/'},
+      {value:"Post Retirement Medical",link:'http://10.60.235.33/HR/'},
+      {value:"Contract Labour Management System",link:'#clms'},
+      {value:"Capital Expenditure Monitoring",link:'#cem'},
+    ];
+    $( "#search" ).autocomplete({
+      source: availableTags,
+      select: function( event, ui ) {
+        console.log(ui.item.link);
+        window.location.replace(ui.item.link)
+      }
+    });
+  } );
 
   
